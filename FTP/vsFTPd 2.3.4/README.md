@@ -1,4 +1,4 @@
-###vsFTPd 2.3.4
+vsFTPd 2.3.4
 
 This docker container is created by downloading an approved vulnerable vsFTPd 2.3.4 version from https://www.exploit-db.com/
 
@@ -14,9 +14,9 @@ Make sure you have internet connection and docker already installed on your mach
 
 Please download the following files in a single directory:
 
-Dockerfile
-start.sh
-vsftpd.conf
+- Dockerfile
+- start.sh
+- vsftpd.conf
 
 They are needed in order to have a successfull build.
 
