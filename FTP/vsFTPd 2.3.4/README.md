@@ -6,7 +6,7 @@ The provided Dockerfile manually installs, checks, optimizes and serves the vuln
 
 If you notice, this is done on the latest debian image with certain types of protection enabled, so breaking in to the application is not straight forward.
 
-The thing is it is not meant to be brkoen in to, but it should be used as a bait to irritate attackers in order to try multiple attack vectors and be recorded.
+The thing is it is not meant to be broken in to, but it should be used as a bait to irritate attackers in order to try multiple attack vectors and be recorded.
 
 Instructions (This has been tested on Ubuntu 16.04 LTS Server):
 
