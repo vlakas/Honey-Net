@@ -14,9 +14,9 @@ Make sure you have internet connection and docker already installed on your mach
 
 Please download the following files in a single directory:
 
-*Dockerfile
-*start.sh
-*vsftpd.conf
+Dockerfile
+start.sh
+vsftpd.conf
 
 They are needed in order to have a successfull build.
 
