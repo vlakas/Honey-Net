@@ -38,4 +38,4 @@ Enter, modify and install whatever you logging solution is with:
 
 Congratulations, you have a running container ready to bait attackers.
 
-Freely add or remove things that you find useful or not to the dockerfile and image overall.
+Freely add or remove things that you find useful or not to the dockerfile and image overall in order to make it work best with your solution.
