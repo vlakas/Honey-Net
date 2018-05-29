@@ -37,3 +37,5 @@ Enter, modify and install whatever you logging solution is with:
 `docker exec -u 0 -it <container-name> bash`
 
 Congratulations, you have a running container ready to bait attackers.
+
+Freely add or remove things that you find useful or not to the dockerfile and image overall.
