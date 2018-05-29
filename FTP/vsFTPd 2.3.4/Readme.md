@@ -24,12 +24,12 @@ After it finishes, you should have a new image.
 
 Please continue by raising it with:
 
-docker run -itd -p 21:21 <image-name>
+`docker run -itd -p 21:21 <image-name>`
 
 Note: This is the time where you give whatever ports you want exported, if you have a logging solution or specific scripts that will extract information, you can add their ports now with additional -p <#:#>
 
 Enter, modify and install whatever you logging solution is with:
 
-docker exec -u 0 -it <container-name> bash
+`docker exec -u 0 -it <container-name> bash`
 
 Congratulations, you have a running container ready to bait attackers.
