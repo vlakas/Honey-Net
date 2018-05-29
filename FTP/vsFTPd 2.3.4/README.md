@@ -20,11 +20,15 @@ Please download the following files in a single directory:
 
 They are needed in order to have a successfull build.
 
+Run the following command to build the image:
+
+`docker build -t vsftpd.2.3.4 .`
+
 After it finishes, you should have a new image.
 
 Please continue by raising it with:
 
-`docker run -itd -p 21:21 <image-name>`
+`docker run -itd -p 21:21 vsftpd.2.3.4`
 
 Note: This is the time where you give whatever ports you want exported, if you have a logging solution or specific scripts that will extract information, you can add their ports now with additional -p <#:#>
 
