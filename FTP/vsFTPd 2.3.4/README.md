@@ -46,6 +46,6 @@ Congratulations, you have a running container ready to bait attackers.
 
 Freely add or remove things that you find useful or not to the dockerfile and image overall in order to make it work best with your solution.
 
-___NOTE: Link used to download the package can be seen in the Dockerfile. If for some reason it gets broken in the future, please let me know or replace it in the Dockerfile with the same package I have uploaded on my GitHub account. It is named as 2ea5d19978710527bb7444d93b67767a-vsftpd-2.3.4.tar.gz This is the same one as the one on Exploit DB downloaded at that point in time.___
+___NOTE: Link used to download the package can be seen in the Dockerfile. If for some reason it gets broken in the future, please let me know or REPLACE it in the Dockerfile with the same package I have uploaded on my GitHub account. It is named as 2ea5d19978710527bb7444d93b67767a-vsftpd-2.3.4.tar.gz | This is the same one as the one on Exploit DB downloaded at that point in time. So it should work perfectly.___
 
-For a new link you can either download it manually from my GitHub account and replace it in the Dockerfile or replace the wget with the link that downloads it itself such as: https://github.com/n-ks/Honey-Net/raw/master/FTP/vsFTPd%202.3.4/2ea5d19978710527bb7444d93b67767a-vsftpd-2.3.4.tar.gz
+For the same package you can either download it manually from my GitHub account and replace it in the Dockerfile or replace the wget with the link that downloads it itself such as: https://github.com/n-ks/Honey-Net/raw/master/FTP/vsFTPd%202.3.4/2ea5d19978710527bb7444d93b67767a-vsftpd-2.3.4.tar.gz
