@@ -24,7 +24,19 @@ Since attackers usually go for weaker targets first, they should focus on this k
 
 INSTRUCTIONS:
 
-1. Download all of the files from the repository, including the vulnerable application.
+1. https://hub.docker.com/r/nksnksnks/vsftpd.2.3.4-vuln-osvdb-73573/
+
+Pull the image from here with:
+
+```
+docker pull nksnksnks/vsftpd.2.3.4-vuln-osvdb-73573
+```
+
+If this is successfull, skip to step 4 and add the appropriate image name or better yet follow the instructions on the Link above.
+
+If for some reason you can't pull and wan't do to it manually, follow the steps below.
+
+2. Download all of the files from the repository, including the vulnerable application.
 
 The way I do this that is most efficient is right clicking on the Download button for example at the .tar.gz app and clicking on Copy Link Location.
 
@@ -34,11 +46,13 @@ Then you can go to your server and download it via:
 wget https://github.com/n-ks/Honey-Net/raw/master/FTP/vsFTPd%202.3.4/vsftpd-2.3.4-infected.tar.gz (Re-Do this yourself, the URL here might change)
 ```
 
-2. Once you have all of your files in one location, extract the .tar.gz with:
+3. Once you have all of your files in one location, extract the .tar.gz with:
 
+```
 tar xvf vsftpd-2.3.4-infected.tar.gz
+```
 
-3. Everything you need should be there, now can you build your Docker Image:
+4. Everything you need should be there, now can you build your Docker Image:
 
 ```
 docker build -t vsftpd.2.3.4 .
