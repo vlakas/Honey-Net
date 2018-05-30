@@ -54,13 +54,15 @@ This is just in case Exploit DB stops serving the broken applications one day, s
 
 If everything worked as it should, you should have a running container serving the new bait. To test this you can do a small Nmap scan from another machine:
 
-`root@kali-nks:~# nmap -Pn -sV -T4 192.168.1.3
+```
+root@kali-nks:~# nmap -Pn -sV -T4 192.168.1.3
 Starting Nmap 7.70 ( https://nmap.org ) at 2018-05-30 09:52 CEST
 Nmap scan report for 192.168.1.3
 Host is up (0.000093s latency).
 Not shown: 998 closed ports
 PORT   STATE SERVICE VERSION
-21/tcp open  ftp     vsftpd 2.3.4`
+21/tcp open  ftp     vsftpd 2.3.4
+```
 
 If this is what you see, this is what attackers will see as well.
 
