@@ -1,4 +1,4 @@
-vsFTPd 2.3.4
+### vsFTPd 2.3.4
 
 This is a build of an older vulnerable piece of software, known to be backdoored. Multiple exploits are looming around so it is well known. 
 
@@ -9,8 +9,6 @@ Thus making it good enough for a logging solution to know exactly what to expect
 As this is a part of the Honey Net branch, as the name suggests it should be used to bait attackers in order to try out exploits and blacklist them before they get to your actual network. What type of logging solution you use is completely your choice. Pretty much anything that will work with the Debian image is OK.
 
 This docker container is created by downloading an approved vulnerable vsFTPd 2.3.4 version from https://www.exploit-db.com/
-
-Link used to download the package can be seen in the Dockerfile. If for some reason it get's broken in the future, please let me know or replace it with the new location, preferably from https://www.exploit-db.com/
 
 The provided Dockerfile manually installs, checks, optimizes and serves the application.
 
@@ -47,3 +45,7 @@ Enter, modify and install whatever you logging solution is with:
 Congratulations, you have a running container ready to bait attackers.
 
 Freely add or remove things that you find useful or not to the dockerfile and image overall in order to make it work best with your solution.
+
+___NOTE: Link used to download the package can be seen in the Dockerfile. If for some reason it gets broken in the future, please let me know or replace it in the Dockerfile with the same package I have uploaded on my GitHub account. It is named as 2ea5d19978710527bb7444d93b67767a-vsftpd-2.3.4.tar.gz This is the same one as the one on Exploit DB downloaded at that point in time.___
+
+For a new link you can either download it manually from my GitHub account and replace it in the Dockerfile or replace the wget with the link that downloads it itself such as: https://github.com/n-ks/Honey-Net/raw/master/FTP/vsFTPd%202.3.4/2ea5d19978710527bb7444d93b67767a-vsftpd-2.3.4.tar.gz
