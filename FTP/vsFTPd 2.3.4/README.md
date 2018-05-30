@@ -24,7 +24,11 @@ Since attackers usually go for weaker targets first, they should focus on this k
 
 INSTRUCTIONS:
 
-1. https://hub.docker.com/r/nksnksnks/vsftpd.2.3.4-vuln-osvdb-73573/
+1.Follow the link and instructions on my Docker account:
+
+https://hub.docker.com/r/nksnksnks/vsftpd.2.3.4-vuln-osvdb-73573/ 
+
+https://store.docker.com/community/images/nksnksnks/vsftpd.2.3.4-vuln-osvdb-73573
 
 Pull the image from here with:
 
