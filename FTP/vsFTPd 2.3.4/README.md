@@ -61,9 +61,9 @@ docker exec -u 0 -it <container-name> bash
 
 6. Congratulations, you have a working vulnerable app.
 
-NOTE: The OS on which this was tested was Ubuntu 16.04 LTS with Docker CE installed.
-NOTE 2: The image used from Docker Hub is Debian based, so any logging solution that you can think of that will work with Debian will probably work for you, only thing to keep in mind is the ports you'll need to add for said solution.
-NOTE 3: Make sure you limit your containers resources and security so it doesn't spread on your host in any way.
+-NOTE: The OS on which this was tested was Ubuntu 16.04 LTS with Docker CE installed.
+-NOTE 2: The image used from Docker Hub is Debian based, so any logging solution that you can think of that will work with Debian will probably work for you, only thing to keep in mind is the ports you'll need to add for said solution.
+-NOTE 3: Make sure you limit your containers resources and security so it doesn't spread on your host in any way.
 
 Result:
 
