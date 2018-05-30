@@ -51,3 +51,16 @@ ___NOTE: Link used to download the package can be seen in the Dockerfile. If for
 For the same package you can either download it manually from my GitHub account and replace it in the Dockerfile or replace the line RUN wget https://www.exploit-db.com/apps/2ea5d19978710527bb7444d93b67767a-vsftpd-2.3.4.tar.gz with the link that downloads the new file hosted on GitHub such as: https://github.com/n-ks/Honey-Net/raw/master/FTP/vsFTPd%202.3.4/2ea5d19978710527bb7444d93b67767a-vsftpd-2.3.4.tar.gz
 
 This is just in case Exploit DB stops serving the broken applications one day, so yo have it here as well.
+
+If everything worked as it should, you should have a running container serving the new bait. To test this you can do a small Nmap scan from another machine:
+
+`root@kali-nks:~# nmap -Pn -sV -T4 192.168.1.3
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-05-30 09:52 CEST
+Nmap scan report for 192.168.1.3
+Host is up (0.000093s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 2.3.4`
+
+If this is what you see, this is what attackers will see as well.
+
