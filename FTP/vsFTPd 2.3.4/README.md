@@ -65,3 +65,47 @@ PORT   STATE SERVICE VERSION
 ```
 
 If this is what you see, this is what attackers will see as well.
+
+To test if it is really a dud, try the official exploit:
+
+```
+Module options (exploit/unix/ftp/vsftpd_234_backdoor):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   RHOST  192.168.1.3      yes       The target address
+   RPORT  21               yes       The target port (TCP)
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+msf exploit(unix/ftp/vsftpd_234_backdoor) > exploit
+
+[*] 192.168.1.3:21 - Banner: 220 (vsFTPd 2.3.4)
+[*] 192.168.1.3:21 - USER: 331 Please specify the password.
+[*] Exploit completed, but no session was created.
+msf exploit(unix/ftp/vsftpd_234_backdoor) > 
+```
+Since the backdoor 6200 should not be ported back and the OS on which this is hosted is not the ideal setup, you should have a hard time getting through. But what really matters is shown in the logs:
+
+```
+root@4189cf203123:/# cd /var/log
+root@4189cf203123:/var/log# ls
+alternatives.log  apt  btmp  dpkg.log  faillog  lastlog  vsftpd.log  wtmp
+root@4189cf203123:/var/log# cat vsftpd.log
+Wed May 30 07:52:03 2018 [pid 10] CONNECT: Client "192.168.1.4"
+Wed May 30 07:55:50 2018 [pid 12] CONNECT: Client "192.168.1.4"
+Wed May 30 07:55:50 2018 [pid 11] [7fld:)] FAIL LOGIN: Client "192.168.1.4"
+root@4189cf203123:/var/log#
+```
+
+We notice that the attack has been recorded, with the exploit being a Smiley Face after any random string of characters in the username.
+
+You can optimize your logging solutions to specifically look for this, then you know that someone is using a specific exploit on your property and once caught, you should locate and blacklist that IP before they go for the rest of your network.
+
+As said before, this is a great way to keep safe, but also at the same time filter random scans from actual exploits.
