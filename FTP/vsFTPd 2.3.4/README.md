@@ -1,12 +1,20 @@
 vsFTPd 2.3.4
 
+This is a build of an older vulnerable piece of software, known to be backdoored. Multiple exploits are looming around so it is well known.
+
+This makes it perfect in order to know what kind of type of exploit to expect and to filter out random attacks against probable ones.
+
+Thus making it good enough for a logging solution to know exactly what to expect and report. 
+
+As this is a part of the Honey Net branch, as the name suggests it should be used to bait attackers in order to try out exploits and blacklist them before they get to your actual network. What type of logging solution you use is completely your choice. Pretty much anything that will work with the Debian image is OK.
+
 This docker container is created by downloading an approved vulnerable vsFTPd 2.3.4 version from https://www.exploit-db.com/
 
-The provided Dockerfile manually installs, checks, optimizes and serves the vulnerable application.
+Link used to download the package can be seen in the Dockerfile. If for some reason it get's broken in the future, please let me know or replace it with the new location, preferably from https://www.exploit-db.com/
 
-___If you notice, this is not done on the ideal un-supported, un-safe type of OS but on the latest Debian Image from Docker store.___
+The provided Dockerfile manually installs, checks, optimizes and serves the application.
 
-___The thing is it is not meant to be broken in to, but it should be used as bait to irritate attackers in order to try multiple attack vectors and be recorded.___
+___This vulnerable app is a dud in terms of exploitation, since you should not open the 6200 backdoor docker port that will be activated from any successful attack. Preferably only port 21 should be open. If you notice, this is not done on the ideal un-supported, un-safe type of OS but on the latest Debian Image from Docker store. It is not meant to be broken in to, but it should be used as bait to irritate attackers in order to try multiple attack vectors and be recorded.___
 
 Instructions (This has been tested on Ubuntu 16.04 LTS Server):
 
@@ -20,7 +28,7 @@ Please download the following files in a single directory:
 
 They are needed in order to have a successfull build.
 
-Run the following command to build the image:
+Run the following command to build the image when you are in said directory:
 
 `docker build -t vsftpd.2.3.4 .`
 
@@ -30,7 +38,7 @@ Please continue by raising it with:
 
 `docker run -itd -p 21:21 vsftpd.2.3.4`
 
-Note: This is the time where you give whatever ports you want exported, if you have a logging solution or specific scripts that will extract information, you can add their ports now with additional -p <#:#>
+Note: This is the time where you give whatever ports you want exported, if you have a logging solution or specific scripts that will extract information, you can add their ports now with an additional -p <#:#>
 
 Enter, modify and install whatever you logging solution is with:
 
