@@ -4,9 +4,9 @@ This docker container is created by downloading an approved vulnerable vsFTPd 2.
 
 The provided Dockerfile manually installs, checks, optimizes and serves the vulnerable application.
 
-If you notice, this is done on the latest Debian image with certain types of protection enabled, so breaking in to the application is not straight forward.
+___If you notice, this is not done on the ideal un-supported, un-safe type of OS but on the latest Debian Image from Docker store.___
 
-The thing is it is not meant to be broken in to, but it should be used as a bait to irritate attackers in order to try multiple attack vectors and be recorded.
+___The thing is it is not meant to be broken in to, but it should be used as bait to irritate attackers in order to try multiple attack vectors and be recorded.___
 
 Instructions (This has been tested on Ubuntu 16.04 LTS Server):
 
