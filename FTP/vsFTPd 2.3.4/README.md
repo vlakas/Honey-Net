@@ -1,8 +1,8 @@
 vsFTPd 2.3.4
 
-This is a build of an older vulnerable piece of software, known to be backdoored. Multiple exploits are looming around so it is well known.
+This is a build of an older vulnerable piece of software, known to be backdoored. Multiple exploits are looming around so it is well known. 
 
-This makes it perfect in order to know what kind of type of exploit to expect and to filter out random attacks against probable ones.
+It is perfect in order to know what kind of type of exploit to expect and to filter out random attacks against specific ones.
 
 Thus making it good enough for a logging solution to know exactly what to expect and report. 
 
@@ -16,9 +16,9 @@ The provided Dockerfile manually installs, checks, optimizes and serves the appl
 
 ___This vulnerable app is a dud in terms of exploitation, since you should not open the 6200 backdoor docker port that will be activated from any successful attack. Preferably only port 21 should be open. If you notice, this is not done on the ideal un-supported, un-safe type of OS but on the latest Debian Image from Docker store. It is not meant to be broken in to, but it should be used as bait to irritate attackers in order to try multiple attack vectors and be recorded.___
 
-Instructions (This has been tested on Ubuntu 16.04 LTS Server):
+Instructions (This has been tested on Ubuntu 16.04 LTS Server with Docker installed):
 
-Make sure you have internet connection and docker already installed on your machine.
+Make sure you have internet connection and Docker already installed on your machine.
 
 Please download the following files in a single directory:
 
