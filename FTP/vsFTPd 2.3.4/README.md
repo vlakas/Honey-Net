@@ -42,14 +42,6 @@ If for some reason you can't pull and wan't do to it manually, follow the steps 
 
 2. Download all of the files from the repository, including the vulnerable application.
 
-The way I do this that is most efficient is right clicking on the Download button for example at the .tar.gz app and clicking on Copy Link Location.
-
-Then you can go to your server and download it via:
-
-```
-wget https://github.com/n-ks/Honey-Net/raw/master/FTP/vsFTPd%202.3.4/vsftpd-2.3.4-infected.tar.gz (Re-Do this yourself, the URL here might change)
-```
-
 3. Once you have all of your files in one location, extract the .tar.gz with:
 
 ```
