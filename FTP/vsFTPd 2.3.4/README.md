@@ -59,7 +59,7 @@ tar xvf vsftpd-2.3.4-infected.tar.gz
 4. Everything you need should be there, now can you build your Docker Image:
 
 ```
-docker build -t vsftpd.2.3.4 .
+docker build -t <docker-image-name> .
 ```
 
 Note that since it will install,update,upgrade stuff this can take a while. (Some errors are also normal, especially in the manual build)
@@ -67,7 +67,7 @@ Note that since it will install,update,upgrade stuff this can take a while. (Som
 5. After your image is successfully built, you can raise it with:
 
 ```
-docker run -itd -p 21:21 -p 6200:6200 vsftpd.2.3.4
+docker run -itd -p 21:21 -p 6200:6200 <docker-image-name>
 ```
 
 Note that if you do not want this application to be vulnerable and only want attackers to try and break in and not actually succeed you can remove -p 6200:6200. (The actual backdoor port) So basically the Docker will be exploited and will open a 6200 port but not to your host system.
