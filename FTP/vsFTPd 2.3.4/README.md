@@ -36,7 +36,7 @@ Pull the image from here with:
 docker pull nksnksnks/vsftpd.2.3.4-vuln-osvdb-73573
 ```
 
-If this is successfull, skip to step 4 and add the appropriate image name or better yet follow the instructions on the Link above.
+If this is successfull, skip to step 5 and add the appropriate image name or better yet follow the instructions on the Link above.
 
 If for some reason you can't pull and wan't do to it manually, follow the steps below.
 
@@ -64,7 +64,7 @@ docker build -t vsftpd.2.3.4 .
 
 Note that since it will install,update,upgrade stuff this can take a while. (Some errors are also normal, especially in the manual build)
 
-4. After your image is successfully built, you can raise it with:
+5. After your image is successfully built, you can raise it with:
 
 ```
 docker run -itd -p 21:21 -p 6200:6200 vsftpd.2.3.4
@@ -72,13 +72,13 @@ docker run -itd -p 21:21 -p 6200:6200 vsftpd.2.3.4
 
 Note that if you do not want this application to be vulnerable and only want attackers to try and break in and not actually succeed you can remove -p 6200:6200. (The actual backdoor port) So basically the Docker will be exploited and will open a 6200 port but not to your host system.
 
-5. To enter your new container and install whatever logging system you want, you can do the following:
+6. To enter your new container and install whatever logging system you want, you can do the following:
 
 ```
 docker exec -u 0 -it <container-name> bash
 ```
 
-6. Congratulations, you have a working vulnerable app.
+7. Congratulations, you have a working vulnerable app.
 
 ___NOTE: The OS on which this was tested was Ubuntu 16.04 LTS with Docker CE installed.___
 
