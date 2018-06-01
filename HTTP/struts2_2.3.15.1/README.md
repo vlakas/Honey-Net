@@ -61,3 +61,13 @@ ___NOTE: The OS on which this was tested was Ubuntu 16.04 LTS with Docker CE ins
 ___NOTE 2: The image used from Docker Hub is Ubuntu based, so any logging solution that you can think of that will work with Ubuntu will probably work for you, only thing to keep in mind is the ports you'll need to add for said solution.___
 
 ___NOTE 3: Make sure you limit your containers resources and security so it doesn't spread to your host in any way.___
+
+Result:
+```
+root@kali-nks:~/Desktop/naaledge/strut# python exploit3.py id
+[Execute]: id
+
+uid=0(root) gid=0(root) groups=0(root)
+```
+
+I've used a specific exploit that is forked on my account from IMMUNIO.
