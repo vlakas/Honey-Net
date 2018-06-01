@@ -34,6 +34,20 @@ If for some reason you can't pull and wan't do to it manually, follow the steps 
 
 2. Download all of the files from the repository, including the vulnerable application.
 
+One file that you need is not included here because it is rather big.
+
+It can be downlaoded from the Apache Archive.
+
+Use the following command:
+
+wget http://archive.apache.org/dist/struts/2.5.10/struts-2.5.10-all.zip
+
+(Keep it zipped) Unless of course you want to unzip it first and change the Dockerfile to COPY the raw version instead of the zipped one.
+
+If for some reason the Apache Archive deletes it, you will need to find it elsewhere or a replacement of Apache Struts version 2.3.5 - 2.3.31 / 2.5 - 2.5.10 and modify the Dockerfile respectively.
+
+I am sorry for the inconvenience but unfortunately it is not recommended to upload more than 50MB files on GitHub.
+
 3. Everything you need should be there, now can you build your Docker Image:
 
 ```
