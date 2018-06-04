@@ -6,10 +6,10 @@ It basically opens well known ports, accepts/closes connections and records whic
 
 This has been tested on Ubuntu 16.04 LTS Server and the pre requisits are as follows:
 
-*Linux
-*Perl
-*Bash
-*Ps
+* Linux
+* Perl (Most modern version should do)
+* Bash
+* Ps (Process Tool)
 
 These dependancies come bundleded with most distros.
 
