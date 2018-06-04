@@ -15,7 +15,7 @@ These dependancies come bundleded with most distros.
 
 INSTRUCTIONS:
 
-1. Download iktomi.tar.gz (This should hold everything that you need)
+1. Download and extract the latest iktomi.tar.gz (This should hold everything that you need)
 
 2. If you want to download everything manually make sure you keep the order of directories.
 
