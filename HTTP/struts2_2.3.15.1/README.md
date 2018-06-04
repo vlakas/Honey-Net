@@ -84,8 +84,4 @@ root@kali-nks:~/Desktop/naaledge/strut# python exploit3.py id
 uid=0(root) gid=0(root) groups=0(root)
 ```
 
-I've used a specific exploit that is forked on my account from IMMUNIO.
-
-https://github.com/n-ks/apache-struts2-CVE-2017-5638
-
-https://github.com/immunio (At the time)
+A manual exploit has been used, not MSF.
