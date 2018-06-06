@@ -24,7 +24,7 @@ Pull the image from here with:
 docker pull nksnksnks/shellshock
 ````
 
-If this is successfull, skip to step 5 and add the appropriate image name or better yet follow the instructions on the Link above.
+If this is successfull, skip to step 3 and add the appropriate image name or better yet follow the instructions on the Link above.
 
 If for some reason you can't pull and wan't do to it manually, follow the steps below.
 
