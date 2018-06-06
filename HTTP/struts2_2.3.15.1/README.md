@@ -85,3 +85,7 @@ uid=0(root) gid=0(root) groups=0(root)
 ```
 
 A manual exploit has been used, not MSF.
+
+NOTE: Influenced by Sam Bowne
+
+https://samsclass.info/124/proj14/p9xstruts.htm
