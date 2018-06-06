@@ -81,3 +81,6 @@ libuuid:x:100:101::/var/lib/libuuid:
 syslog:x:101:104::/home/syslog:/bin/false
 ```
 
+NOTE: Influenced and modified version from:
+
+https://github.com/Zenithar/docker-shellshockable
