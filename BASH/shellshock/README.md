@@ -30,6 +30,8 @@ If for some reason you can't pull and wan't do to it manually, follow the steps 
 
 2. Download all of the files from the repository, including the vulnerable application.
 
+Then please extract both tar.gz files in the same directory.
+
 3. After your image is successfully built, you can raise it with:
 
 ```
