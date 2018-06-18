@@ -24,15 +24,21 @@ https://store.docker.com/community/images/nksnksnks/ssh-ftp-hole
 
 3. Everything you need should be there, now can you build your Docker Image:
 
+```
 docker build -t ssh-ftp-vuln-final .
+```
 
 4. After your image is successfully built, you can raise it with:
 
+```
 docker run -itd -p 21:21 -p 2222:2222 <docker-image-name>
+```
 
 6. To enter your new container and install whatever logging system you want, you can do the following:
 
+```
 docker exec -u 0 -it <container-name> bash
+```
 
 7. Congratulations, you have a working vulnerable atmosphere.
 
